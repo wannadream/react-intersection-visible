@@ -64,6 +64,7 @@ class YourComponent extends Component
 | onHide    | Function that is called when the element becomes invisible |
 | onShow    | Function that is called when the element becomes visible  |
 | options    | Object, with the extras options supported by the IntersectionObserver API (root, rootMargin, threshold)|
+| ratioOfOnShow    | Number, customize the ratio of element visibility for triggering onShow() event handler.
 
 More about the options [here](https://developers.google.com/web/updates/2016/04/intersectionobserver?hl=en)
 
