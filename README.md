@@ -11,6 +11,7 @@ with polyfill fallback
 1. Import `IntersectionVisible` hoc component
 2. Wrap your main component with the `IntersectionVisible`
 3. Provide the options and callbacks you want
+4. Customize ratio of visibility for triggering onShow() event handler
 
 
 
@@ -43,7 +44,8 @@ class YourComponent extends Component
     render(){
         return (<IntersectionVisible onIntersect={ e => this.onIntersect( e ) }
                                      onHide={ e => this.onHide( e ) }
-                                     onShow={ e => this.onShow( e ) }>
+                                     onShow={ e => this.onShow( e ) }
+                                     ratioOfOnShow={75}>
                     <div>
                         blah blah blah  blah blah blah  blah blah blah  blah blah
                           blah blah blah  blah blah blah  blah blah blah
